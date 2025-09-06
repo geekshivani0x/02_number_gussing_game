@@ -1,17 +1,18 @@
-#number gussing game
+#NUMBER GUSSING GAME
 import  random
 
 print("Welcome to a number gussing game !🎯")
 print("I have selected a number between 1 and 100. Can you guess it?")
-
+# IIT IS RUM WEHN THE CONDION BECOME FALSE.
 while True:
-    number=random.randint(1,100)
+#IT GENERATE RANDOM NUMBER FROM  1-100.
+    number=random.randint(1,100) 
     attempt=0
     gusses=None
 
     while gusses!=number:
         try:
-            gusses=int(input("Enter your gusses: "))
+            gusses=int(input("Enter your gusses: ")) # It take input from the user.
             attempt+=1
             if gusses<number:
                 print("Too low! ⬇️")
